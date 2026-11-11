@@ -7,10 +7,14 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 <style>
   body { margin: 0; background: #0E0F11; color: #F3F3F1; font-family: Inter, system-ui, sans-serif; }
-  main { max-width: 960px; margin: 0 auto; padding: 32px 20px 56px; display: flex; flex-direction: column; gap: 24px; }
+  main { max-width: 1280px; margin: 0 auto; padding: 32px 20px 56px; display: flex; flex-direction: column; gap: 24px; }
   .eyebrow { font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: #A3A5AA; }
   h1 { margin: 6px 0 0; font-size: clamp(36px, 8vw, 64px); line-height: 1; letter-spacing: -0.02em; }
   p.lead { margin: 0; font-size: 18px; line-height: 1.5; color: #C9CBCF; }
+  .videos { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
+  .videos figure { margin: 0; display: flex; flex-direction: column; gap: 10px; }
+  .videos figcaption { font-size: 18px; font-weight: 700; }
+  .videos figcaption span { display: block; font-size: 14px; font-weight: 400; color: #A3A5AA; margin-top: 2px; }
   video { width: 100%; border-radius: 16px; background: #000; display: block; }
   ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
   li { background: #17181B; border: 1px solid #2A2C31; border-radius: 14px; padding: 16px; }
@@ -26,12 +30,21 @@
     <h1>Kumar Famous Phone</h1>
   </div>
   <p class="lead">A phone that unfolds into a tablet, with a pen in the hinge and snap-on game controllers.</p>
-  <video src="video.mp4" poster="poster.jpg" controls playsinline preload="metadata"></video>
+  <div class="videos">
+    <figure>
+      <video src="video.mp4" poster="poster.jpg" controls playsinline preload="metadata"></video>
+      <figcaption>The phone<span>How it folds, what's inside, and game mode</span></figcaption>
+    </figure>
+    <figure>
+      <video src="apps.mp4" poster="apps_poster.jpg" controls playsinline preload="metadata"></video>
+      <figcaption>The apps<span>Games, messages, music, camera and more</span></figcaption>
+    </figure>
+  </div>
   <ul>
     <li><strong><span class="dot"></span>Phone + tablet</strong><span>Fold it to use as a phone. Unfold both sides for one big tablet screen.</span></li>
     <li><strong><span class="dot"></span>Pen in the hinge</strong><span>Pull it out to write and draw. It charges while stored.</span></li>
     <li><strong><span class="dot"></span>Game mode</strong><span>Snap on two controllers and it's a game console.</span></li>
-    <li><strong><span class="dot"></span>Three cameras</strong><span>Wide, ultra-wide and zoom on the back.</span></li>
+    <li><strong><span class="dot"></span>All your apps</strong><span>Games, messages, music, maps, camera and more.</span></li>
   </ul>
 </main>
 </body>
