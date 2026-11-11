@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kumar Famous Phone</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  body { margin: 0; background: #0E0F11; color: #F3F3F1; font-family: Inter, system-ui, sans-serif; }
+  main { max-width: 960px; margin: 0 auto; padding: 32px 20px 56px; display: flex; flex-direction: column; gap: 24px; }
+  .eyebrow { font-size: 13px; letter-spacing: .16em; text-transform: uppercase; color: #A3A5AA; }
+  h1 { margin: 6px 0 0; font-size: clamp(36px, 8vw, 64px); line-height: 1; letter-spacing: -0.02em; }
+  p.lead { margin: 0; font-size: 18px; line-height: 1.5; color: #C9CBCF; }
+  video { width: 100%; border-radius: 16px; background: #000; display: block; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; }
+  li { background: #17181B; border: 1px solid #2A2C31; border-radius: 14px; padding: 16px; }
+  li strong { display: block; font-size: 17px; margin-bottom: 4px; }
+  li span { color: #A3A5AA; font-size: 15px; line-height: 1.45; }
+  .dot { display: inline-block; width: 10px; height: 10px; border-radius: 50%; background: #FF7A3D; margin-right: 8px; }
+</style>
+</head>
+<body>
+<main>
+  <div>
+    <div class="eyebrow">Introducing</div>
+    <h1>Kumar Famous Phone</h1>
+  </div>
+  <p class="lead">A phone that unfolds into a tablet, with a pen in the hinge and snap-on game controllers.</p>
+  <video src="video.mp4" poster="poster.jpg" controls playsinline preload="metadata"></video>
+  <ul>
+    <li><strong><span class="dot"></span>Phone + tablet</strong><span>Fold it to use as a phone. Unfold both sides for one big tablet screen.</span></li>
+    <li><strong><span class="dot"></span>Pen in the hinge</strong><span>Pull it out to write and draw. It charges while stored.</span></li>
+    <li><strong><span class="dot"></span>Game mode</strong><span>Snap on two controllers and it's a game console.</span></li>
+    <li><strong><span class="dot"></span>Three cameras</strong><span>Wide, ultra-wide and zoom on the back.</span></li>
+  </ul>
+</main>
+</body>
+</html>
